@@ -1,0 +1,219 @@
+/* Settings */
+
+body
+{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    margin: 0;
+    padding: 0 10px;
+    background: hsl(210, 60%, 98%);
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Main */
+
+main
+{
+    background: hsl(0, 0%, 100%);
+    padding: 31px;
+    max-width: 730px;
+    border-radius: 15px;
+    margin: 63px auto;
+}
+
+h1
+{
+    font-weight: 800;
+    font-size: 24px;
+    color: hsl(224, 21%, 14%);
+}
+
+h1 span
+{
+   background: hsl(219, 85%, 26%); 
+   padding: 2px 11px 4px 11px;
+   color: hsl(0, 0%, 100%);
+   font-size: 16px;
+   font-weight: 800;
+   border-radius: 6px;
+   margin-left: 9px;
+   position: relative;
+   bottom: 4px;
+}
+
+button
+{
+    font-weight: 500;
+    font-size: 16px;
+    font-family: inherit;
+    color: hsl(219, 12%, 42%);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover
+{
+    color: hsl(219, 85%, 26%);
+}
+
+.head
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 31px;
+}
+
+ul
+{
+    list-style: none;
+}
+
+li 
+{
+    color: hsl(219, 12%, 42%);
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    align-items: flex-start;
+    gap: 19px;
+    padding: 17px 20px;
+    margin-bottom: 8px;
+}
+
+.avatar
+{
+    height: 45px;
+    width: 45px;
+}
+
+.time
+{
+    color: hsl(219, 14%, 63%);
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 3px;
+}
+
+a.primary
+{
+    color: hsl(224, 21%, 14%);
+    margin-right: 3px;
+}
+
+a.secondary
+{
+    color: hsl(219, 12%, 42%);
+    margin-left: 3px;
+}
+
+a.blue
+{
+    color: hsl(219, 85%, 26%);
+    margin-left: 3px;
+}
+
+a
+{
+    font-size: 16px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: hsl(219, 85%, 26%);
+}
+
+li.unread
+{
+    background: hsl(210, 60%, 98%);
+}
+
+li.unread .notification::after
+{
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: hsl(2, 90%, 64%);
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 0 1px 5px;
+}
+
+.card
+{
+    padding: 18px 20px;
+    margin-top: 13px;
+    border: 1px solid hsl(205, 33%, 90%);
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.card:hover
+{
+    background: hsl(211, 68%, 94%);
+}
+
+.image
+{
+    height: 45px;
+    width: 45px;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.image:hover
+{
+    box-shadow:  hsl(205, 33%, 90%)2px 2px 20px 0px;
+}
+
+
+/* Responsive */
+
+@media screen and (max-width: 461px)
+{
+    body
+    {
+        padding: 0;
+    }
+
+    h1
+    {
+        font-size: 20px;
+    }
+
+    button
+    {
+        font-size: 14px;
+    }
+
+    li
+    {
+        font-size: 14px;
+        padding: 16px;
+    }
+
+    a,
+    .time
+    {
+        font-size: 14px;
+    }
+
+    main
+    {
+        margin: 0;
+        border-radius: 0;
+        padding: 24px 16px;
+    }
+}
+
+
