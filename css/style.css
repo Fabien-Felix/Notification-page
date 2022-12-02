@@ -27,6 +27,14 @@ main
     margin: 63px auto;
 }
 
+.head
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 31px;
+}
+
 h1
 {
     font-weight: 800;
@@ -47,28 +55,21 @@ h1 span
    bottom: 4px;
 }
 
-button
+.head p a
 {
     font-weight: 500;
     font-size: 16px;
-    font-family: inherit;
     color: hsl(219, 12%, 42%);
-    background: none;
-    border: none;
-    cursor: pointer;
 }
 
-button:hover
+.head p a:hover
 {
     color: hsl(219, 85%, 26%);
 }
 
-.head
+.dnone
 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 31px;
+    display: none;
 }
 
 ul
